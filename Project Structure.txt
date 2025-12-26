@@ -1,0 +1,29 @@
+//* Project Structure for a Node.js Express Application with JWT Authentication and Role-Based Access Control
+
+
+├─ config/
+│   ├─ db.js
+│   └─ corsOptions.js
+│
+├─ controllers/
+│   ├─ authController.js
+│   └─ postController.js
+│
+├─ middlewares/
+│   ├─ verifyJWT.js
+│   ├─ verifyRoles.js
+│   └─ errorHandler.js
+│
+├─ models/
+│   ├─ User.js
+│   └─ Post.js
+│
+├─ routes/
+│   ├─ authRoutes.js
+│   └─ postRoutes.js
+│
+├─ utils/
+│   └─ generateTokens.js
+│
+├─ app.js
+└─ server.js
