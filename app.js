@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
 const cookieParser = require("cookie-parser");
 const errorHandler = require("./middlewares/errorHandler");
 const verifyJWT = require("./middlewares/verifyJWT");
@@ -10,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 // third-party middleware
-// app.use(cors());
+app.use(cors(corsOptions));
 app.use(cookieParser());
 
 // routes
